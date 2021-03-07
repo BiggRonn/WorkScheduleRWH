@@ -15,12 +15,12 @@ $(document).ready(function(){
 
     
 
-    time9.text("")
-    console.log(time9);
-    var blah = document.querySelector("9");
-    console.log(blah)
+   time9.text("")
+    console.log(JSON.stringify(time9));
+    //var blah = document.querySelector("9");
+   // console.log(blah)
 
-    time9.addEventListener("click", typeText);
+    //time9.addEventListener("click", typeText);
 
 
 
