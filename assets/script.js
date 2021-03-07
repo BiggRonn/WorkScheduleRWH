@@ -15,12 +15,7 @@ $(document).ready(function(){
 
     
 
-   time9.text("")
-    console.log(JSON.stringify(time9));
-    //var blah = document.querySelector("9");
-   // console.log(blah)
-
-    //time9.addEventListener("click", typeText);
+ 
 
 
 
@@ -30,15 +25,19 @@ $(document).ready(function(){
 
 
 
-
+    console.log(time9.;
 
 
 })
 
-function typeText(){
 
 
+/*
+
+
+if moment().format("military hour") >,<, = this.id {
+    this.setAttribute("background-color: past, present, future")
 }
 
-
+*/
 
