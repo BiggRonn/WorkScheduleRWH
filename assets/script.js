@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     var currentDay = $("#currentDay");
-    var time9 = $("#9");
+    $("#9").val(localStorage.getItem("9"));
     var time10 = $("#10");
     var time11 = $("#11");
     var time12 = $("#12");
@@ -11,9 +11,22 @@ $(document).ready(function(){
     var time16 = $("#16");
     var time17 = $("#17");
     
+    time10.val("")
     currentDay.text(moment().format("dddd, MMMM Do, YYYY h:mmA"));
 
+    console.log(localStorage.getItem("9"));
+
     
+
+    $(".saveBtn").on("click", function(){
+        console.log($(this).siblings(".textarea").val())
+        var hour = $(this).siblings(".textarea").attr("id")
+        var task = $(this).siblings(".textarea").val()
+        localStorage.setItem(hour, task);
+
+    })
+    
+    //time9.addClass("bg-danger");
 
  
 
@@ -25,7 +38,7 @@ $(document).ready(function(){
 
 
 
-    console.log(time9.;
+    
 
 
 })
