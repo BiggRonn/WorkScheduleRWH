@@ -27,9 +27,30 @@ $(document).ready(function(){
 
     })
     
-    //time9.addClass("bg-danger");
+    //sets all cells grey if after 5pm and green if before 9am
 
-    
+    if (moment().format("H") > 17){
+        $("#9").addClass("bg-secondary");
+        $("#10").addClass("bg-secondary");
+        $("#11").addClass("bg-secondary");
+        $("#12").addClass("bg-secondary");
+        $("#13").addClass("bg-secondary");
+        $("#14").addClass("bg-secondary");
+        $("#15").addClass("bg-secondary");
+        $("#16").addClass("bg-secondary");
+        $("#17").addClass("bg-secondary");
+    } else if (moment().format("H") < 9){
+        $("#9").addClass("bg-success");
+        $("#10").addClass("bg-success");
+        $("#11").addClass("bg-success");
+        $("#12").addClass("bg-success");
+        $("#13").addClass("bg-success");
+        $("#14").addClass("bg-success");
+        $("#15").addClass("bg-success");
+        $("#16").addClass("bg-success");
+        $("#17").addClass("bg-success");
+
+    }
 
 
 
